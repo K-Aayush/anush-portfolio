@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai"
 import { FaLinkedinIn, FaGithub } from "react-icons/fa"
-import { BsFillPersonLinesFill } from "react-icons/bs"
+import { FiFacebook } from "react-icons/fi"
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -53,7 +53,7 @@ const Navbar = () => {
             </Link>
           </ul>
 
-          <div onClick={handleNav} className='md:hidden'>
+          <div onClick={handleNav} className='md:hidden cursor-pointer'>
             <AiOutlineMenu size={25} />
           </div>
 
@@ -72,12 +72,12 @@ const Navbar = () => {
                 width={60}
                 height={35}
               />
-              <div onClick={handleNav} className='rounded-full shadow-lg shadow-[#0ef] p-3 cursor-pointer'>
+              <div onClick={handleNav} className='border-[2px] border-[#0ef] rounded-full shadow-md shadow-[#0ef] p-3 cursor-pointer'>
                 <AiOutlineClose />
               </div>
             </div>
             <div className='border-b border-slate-700 my-4'>
-              <p className='w-[85%] md:w-[90%] py-4'>Let's build something together..</p>
+              <p className='w-[85%] md:w-[90%] py-4'>LET'S BUILD SOMETHING TOGETHER</p>
             </div>
           </div>
 
@@ -123,7 +123,7 @@ const Navbar = () => {
                   <AiOutlineMail />
                 </div>
                 <div className='border-[2px] border-solid cursor-pointer rounded-full border-[#0ef] p-3 text-[#0ef] hover:scale-105 hover:bg-[#0ef] hover:text-[#1f242d] hover:shadow-2xl hover:shadow-[#0ef] ease-in duration-300'>
-                  <BsFillPersonLinesFill />
+                  <FiFacebook />
                 </div>
               </div>
             </div>
