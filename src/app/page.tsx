@@ -1,5 +1,6 @@
 import About from '@/components/About'
 import Main from '@/components/Main'
+import Projects from '@/components/Projects'
 import Skills from '@/components/Skills'
 import Image from 'next/image'
 
@@ -9,6 +10,7 @@ export default function Home() {
       <Main />
       <About />
       <Skills />
+      <Projects />
     </div>
   )
 }
